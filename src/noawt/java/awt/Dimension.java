@@ -25,7 +25,7 @@
 
 package noawt.java.awt;
 
-import java.awt.geom.Dimension2D;
+import noawt.java.awt.geom.Dimension2D;
 
 /**
  * The <code>Dimension</code> class encapsulates the width and

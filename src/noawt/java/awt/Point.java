@@ -25,7 +25,7 @@
 
 package noawt.java.awt;
 
-import java.awt.geom.Point2D;
+import noawt.java.awt.geom.Point2D;
 
 /**
  * A point representing a location in {@code (x,y)} coordinate space,
