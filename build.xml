@@ -43,8 +43,15 @@
 		</fileset>
 	</path>
 
-	<target name="dist" depends="compile" description="generate the distribution">
+	<target name="dist" depends="dist-binary, dist-sources" />
+
+	<target name="dist-binary" depends="compile" description="generate the distribution">
 		<jar jarfile="${dist}/noawt.jar" basedir="${build}">
+		</jar>
+	</target>
+
+	<target name="dist-sources" depends="compile" description="generate the distribution">
+		<jar jarfile="${dist}/noawt-src.jar" basedir="${src}">
 		</jar>
 	</target>
 
